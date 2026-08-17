@@ -1,7 +1,7 @@
 const translations = {
   en: {
     title: "Chandu Real Estate",
-    subtitle: "Your Trusted Partner in Finding Your Dream Home",
+    subtitle: "Your Trusted Partner",
     // Menus
     menuHome: "Home",
     menuAbout: "About Us",

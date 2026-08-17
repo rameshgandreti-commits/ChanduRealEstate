@@ -96,6 +96,12 @@ function navigateTo(targetId, event) {
     }
   }
 
+  // Show hero-container (title, subtitle, buttons) only on Home section
+  const heroContainer = document.querySelector('.hero-container');
+  if (heroContainer) {
+    heroContainer.style.display = targetId === 'home' ? 'flex' : 'none';
+  }
+
   // Scroll smoothly to top of main content on page switch
   if (targetId !== 'home' || !heroBanner) {
     const mainContent = document.querySelector('.main-content');
