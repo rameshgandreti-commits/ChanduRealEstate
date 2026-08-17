@@ -4,7 +4,8 @@
   "description": "Static web application for Chandu Real Estate with Express backend and WhatsApp integration.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Static site lives in public/ — no build step required.'"
   },
   "dependencies": {
     "express": "^4.19.2"

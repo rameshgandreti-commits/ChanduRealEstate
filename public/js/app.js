@@ -1,14 +1,11 @@
 // Chandu Real Estate - Core Client-Side Logic
 
 let currentLanguage = 'en';
-let whatsappNumber = '+919886126344'; // Fallback value, will be fetched from server
+const whatsappNumber = '+919886126344';
 let projectData = {};
 
 // On DOMContentLoaded, initialize everything
 document.addEventListener('DOMContentLoaded', () => {
-  // Fetch properties (like WhatsApp phone number) from the server
-  fetchConfig();
-  
   // Set default active tab and scroll to top
   window.scrollTo(0, 0);
   
@@ -29,22 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Trigger initial language translation rendering
   updateTranslations();
 });
-
-// Fetch properties from properties file via Node Express API
-async function fetchConfig() {
-  try {
-    const response = await fetch('/api/config');
-    if (response.ok) {
-      const data = await response.json();
-      if (data.whatsappNumber) {
-        whatsappNumber = data.whatsappNumber;
-        console.log('Successfully loaded WhatsApp target number from properties:', whatsappNumber);
-      }
-    }
-  } catch (error) {
-    console.error('Failed to fetch configuration from properties. Using default WhatsApp target.', error);
-  }
-}
 
 // Mobile Menu toggle action
 function toggleMobileMenu() {
