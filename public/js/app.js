@@ -1,7 +1,7 @@
 // Chandu Real Estate - Core Client-Side Logic
 
 let currentLanguage = 'en';
-const whatsappNumber = '+919886126344';
+const whatsappNumber = '+919381129488';
 let projectData = {};
 
 // On DOMContentLoaded, initialize everything

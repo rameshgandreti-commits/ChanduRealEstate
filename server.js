@@ -84,7 +84,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // API Endpoint to get the config
 app.get('/api/config', (req, res) => {
   res.json({
-    whatsappNumber: properties['whatsapp.number'] || '+919886126344',
+    whatsappNumber: properties['whatsapp.number'] || '+919381129488',
   });
 });
 
@@ -101,6 +101,6 @@ app.listen(port, () => {
   console.log(`  Chandu Real Estate server is running on:`);
   console.log(`  http://localhost:${port}`);
   console.log(`  Page assembled from ${PAGE_PARTIALS.length} partials in public/partials/`);
-  console.log(`  WhatsApp redirection target: ${properties['whatsapp.number'] || '+919886126344'}`);
+  console.log(`  WhatsApp redirection target: ${properties['whatsapp.number'] || '+919381129488'}`);
   console.log(`====================================================`);
 });
