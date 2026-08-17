@@ -1,0 +1,56 @@
+    <!-- OUR PROJECTS SECTION (Interactive Dropdown + Details) -->
+    <section id="section-projects" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="projects-title" class="section-title">Our Premium Ventures</h2>
+          <div class="title-underline"></div>
+          <p id="projects-subtitle" class="section-subtitle">Explore our prestigious layouts and modern apartments across major cities</p>
+        </div>
+
+        <!-- City Dropdown Selector -->
+        <div class="dropdown-container">
+          <label for="city-select" id="select-city-label" class="dropdown-label">Select City:</label>
+          <div class="select-wrapper">
+            <select id="city-select" class="custom-select" onchange="onCityChange(this.value)">
+              <option value="parlakimidi" id="opt-parlakimidi">Parlakimidi</option>
+              <option value="vizag"       id="opt-vizag">Vizag</option>
+              <option value="vizianagaram" id="opt-vizianagaram">Vizianagaram</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
+
+        <!-- Dynamic Project Details Display Card -->
+        <div class="project-details-card" id="project-details-card">
+          <div class="project-image-side">
+            <img id="project-img" src="" alt="Project Image" class="proj-img">
+            <span class="project-tag" id="project-tag">Premium Layout</span>
+          </div>
+          <div class="project-info-side">
+            <div class="location-badge">
+              <i class="fa-solid fa-location-dot"></i> <span id="project-location">Location</span>
+            </div>
+            <h3 id="project-name" class="project-headline">Project Name</h3>
+            <p id="project-description" class="project-desc">Description</p>
+
+            <div class="price-box">
+              <span class="price-label">Price Range / Rate</span>
+              <span id="project-price" class="price-value">Price</span>
+            </div>
+
+            <div class="project-features-list">
+              <h4>Key Highlights:</h4>
+              <ul class="features-bullets">
+                <li><i class="fa-solid fa-circle-check"></i> <span id="project-feat-1">Feature 1</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span id="project-feat-2">Feature 2</span></li>
+                <li><i class="fa-solid fa-circle-check"></i> <span id="project-feat-3">Feature 3</span></li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary btn-block" onclick="navigateTo('site-visit')">
+              <span id="project-view-btn-text">Request Call Back</span> <i class="fa-brands fa-whatsapp"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>

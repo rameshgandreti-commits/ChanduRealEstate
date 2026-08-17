@@ -1,0 +1,237 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chandu Real Estate — Free Domain &amp; Hosting Guide</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 14px; line-height: 1.7; background: #ffffff; color: #1f2328; }
+  .page { max-width: 760px; margin: 0 auto; padding: 36px 24px 48px; }
+  h1 { font-size: 22px; font-weight: 700; color: #1f2328; margin-bottom: 4px; }
+  .subtitle { color: #57606a; font-size: 13px; margin-bottom: 32px; }
+  h2 { font-size: 16px; font-weight: 700; color: #1f2328; margin: 28px 0 10px; padding-left: 10px; border-left: 3px solid #3b82d4; }
+  p { margin-bottom: 10px; color: #1f2328; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 5px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px; vertical-align: middle; }
+  .badge-green  { background: #dcfce7; color: #15803d; }
+  .badge-blue   { background: #dbeafe; color: #1e40af; }
+  .badge-orange { background: #fff7ed; color: #c2410c; }
+  .badge-purple { background: #ede9fe; color: #6d28d9; }
+  .section-box { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+  .step { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+  .step-num { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #3b82d4; color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step-body { flex: 1; }
+  .step-body strong { display: block; margin-bottom: 3px; font-size: 13.5px; }
+  code { background: #f0f0f5; border-radius: 4px; padding: 1px 6px; font-family: "Consolas","Courier New",monospace; font-size: 12px; color: #7c5cd8; }
+  .code-block { background: #1f2328; color: #e6edf3; border-radius: 6px; padding: 14px 16px; font-family: "Consolas","Courier New",monospace; font-size: 12px; line-height: 1.6; margin: 10px 0; overflow-x: auto; white-space: pre; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 16px; font-size: 13px; }
+  th { background: #f7f8fa; text-align: left; padding: 7px 10px; border: 1px solid #e5e7eb; font-weight: 600; color: #1f2328; }
+  td { padding: 7px 10px; border: 1px solid #e5e7eb; color: #1f2328; vertical-align: top; }
+  .note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #92400e; margin: 12px 0; }
+  .tip  { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #15803d; margin: 12px 0; }
+  a { color: #3b82d4; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .platform-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+  .platform-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb; text-align: center; font-size: 12px; color: #57606a; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Chandu Real Estate</h1>
+  <p class="subtitle">Free Domain &amp; Hosting — Complete Deployment Guide  ·  Node.js + Express app</p>
+
+  
+  <div class="section-box">
+    <p><strong>Goal:</strong> Deploy the existing Node.js/Express app (with WhatsApp integration) live on the internet at <code>chandurealestate.com</code> — for <strong>₹0 / $0</strong>.</p>
+    <p style="margin-bottom:0"><strong>Recommended stack:</strong> <span class="badge badge-blue">Railway (free hosting)</span> + <span class="badge badge-green">Freenom or js.org (free domain)</span></p>
+  </div>
+
+  
+  <h2>1 — Free Hosting Options (Pick One)</h2>
+
+  <table>
+    <tr>
+      <th>Platform</th>
+      <th>Free Tier</th>
+      <th>Node.js Support</th>
+      <th>Custom Domain</th>
+      <th>Best For</th>
+    </tr>
+    <tr>
+      <td><strong>Railway</strong> <span class="badge badge-green">★ Recommended</span></td>
+      <td>$5 credit/month (no credit card needed)</td>
+      <td>Yes — auto-detects</td>
+      <td>Yes (free HTTPS)</td>
+      <td>This project — full Node.js server</td>
+    </tr>
+    <tr>
+      <td><strong>Render</strong></td>
+      <td>Free tier — sleeps after 15 min idle</td>
+      <td>Yes</td>
+      <td>Yes (free HTTPS)</td>
+      <td>Low-traffic sites</td>
+    </tr>
+    <tr>
+      <td><strong>Glitch</strong></td>
+      <td>Always free (sleeps on idle)</td>
+      <td>Yes</td>
+      <td>Paid only</td>
+      <td>Quick demos</td>
+    </tr>
+    <tr>
+      <td><strong>Vercel / Netlify</strong></td>
+      <td>Free forever</td>
+      <td>Serverless only (not a full server)</td>
+      <td>Yes (free HTTPS)</td>
+      <td>Static sites — not ideal here</td>
+    </tr>
+  </table>
+
+  <div class="tip">Railway is the best fit: it runs your <code>node server.js</code> command directly, supports the <code>port</code> env-var, and gives you a free <code>.railway.app</code> subdomain with HTTPS out of the box.</div>
+
+  
+  <h2>2 — Deploy to Railway (Step by Step)</h2>
+
+  <div class="section-box">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>Push your project to GitHub</strong>
+        Create a free account at <a href="https://github.com" target="_blank">github.com</a>, create a new repo (e.g. <code>chandu-real-estate</code>), and push your code:
+        <div class="code-block">git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/chandu-real-estate.git
+git push -u origin main</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>Sign up at Railway</strong>
+        Go to <a href="https://railway.app" target="_blank">railway.app</a> → click <strong>Start a New Project</strong> → choose <strong>Deploy from GitHub repo</strong> → select your repo.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Set the PORT environment variable</strong>
+        In Railway dashboard → your service → <strong>Variables</strong> tab → add:
+        <div class="code-block">PORT = ${{PORT}}</div>
+        Railway injects <code>PORT</code> automatically; your <code>server.js</code> already reads it via <code>properties['port'] || 3000</code>. Add one more variable:
+        <div class="code-block">WHATSAPP_NUMBER = +919886126344</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <strong>Verify the start command</strong>
+        Railway will auto-detect <code>"start": "node server.js"</code> from your <code>package.json</code>. No extra config needed.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <strong>Get your free URL</strong>
+        After deploy, go to <strong>Settings → Networking → Generate Domain</strong>. You get a free URL like <code>chandu-real-estate.up.railway.app</code> with HTTPS automatically.
+      </div>
+    </div>
+  </div>
+
+  
+  <h2>3 — Free Domain Options (Pick One)</h2>
+
+  <div class="platform-card">
+    <h3>Option A — Freenom (.tk / .ml / .ga / .cf / .gq) <span class="badge badge-green">Free</span></h3>
+    <p>Register <code>chandurealestate.tk</code> or <code>chandurealestate.ml</code> for free at <a href="https://www.freenom.com" target="_blank">freenom.com</a>. Free for 12 months, renewable. Then point CNAME to your Railway domain.</p>
+    <div class="note">⚠ Freenom free domains are sometimes unavailable for new registrations. If the site doesn't work, use Option B or C.</div>
+  </div>
+
+  <div class="platform-card">
+    <h3>Option B — js.org subdomain (*.js.org) <span class="badge badge-green">Free &amp; reliable</span></h3>
+    <p>Get a free subdomain like <code>chandurealestate.js.org</code> via a GitHub Pull Request to the <a href="https://github.com/js-org/js.org" target="_blank">js-org/js.org</a> repo. Permanent and free.</p>
+    <ul>
+      <li>Fork the repo → add one line to <code>cnames_active.js</code>: <code>"chandurealestate": "chandu-real-estate.up.railway.app"</code></li>
+      <li>Submit a Pull Request → approved in 1–3 days.</li>
+    </ul>
+  </div>
+
+  <div class="platform-card">
+    <h3>Option C — is-a.dev subdomain (*.is-a.dev) <span class="badge badge-green">Free &amp; developer-friendly</span></h3>
+    <p>Register <code>chandurealestate.is-a.dev</code> free via a PR to <a href="https://github.com/is-a-dev/register" target="_blank">is-a-dev/register</a>. Add a JSON file and submit a PR.</p>
+  </div>
+
+  <div class="platform-card">
+    <h3>Option D — Cheapest paid option (.in domain) <span class="badge badge-orange">~₹699/year</span></h3>
+    <p>For a real <code>.com</code> or <code>.in</code> domain, use <a href="https://www.bigrock.in" target="_blank">BigRock</a> or <a href="https://www.godaddy.com" target="_blank">GoDaddy</a>. A <code>.in</code> domain costs ~₹699/year — very affordable for a business site.</p>
+  </div>
+
+  
+  <h2>4 — Connect Your Free Domain to Railway</h2>
+
+  <div class="section-box">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>In Railway</strong> — go to your service → <strong>Settings → Networking → Custom Domain</strong> → enter your domain (e.g. <code>chandurealestate.tk</code>).
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>In your domain registrar DNS settings</strong> — add a <strong>CNAME</strong> record:
+        <div class="code-block">Type:  CNAME
+Name:  www   (or @)
+Value: chandu-real-estate.up.railway.app</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Wait 5–30 minutes</strong> for DNS propagation. Railway auto-issues an SSL/HTTPS certificate (via Let's Encrypt). Your site will be live at <code>https://chandurealestate.tk</code>.
+      </div>
+    </div>
+  </div>
+
+  
+  <h2>5 — Update robots.txt &amp; sitemap.xml</h2>
+  <p>Once your domain is confirmed, update two files in your project to reflect the real URL:</p>
+  <div class="section-box">
+    <p><strong>public/robots.txt</strong> — change the Sitemap URL to your new domain.</p>
+    <p><strong>public/sitemap.xml</strong> — replace all occurrences of <code>https://www.chandurealestate.com</code> with your actual domain (e.g. <code>https://chandurealestate.tk</code>).</p>
+    <p>Commit and push — Railway redeploys automatically.</p>
+  </div>
+
+  
+  <h2>6 — Cost Summary</h2>
+  <table>
+    <tr><th>Item</th><th>Free Option</th><th>Cost</th></tr>
+    <tr><td>Hosting</td><td>Railway (free tier)</td><td class="badge badge-green">Free</td></tr>
+    <tr><td>HTTPS / SSL</td><td>Auto via Railway + Let's Encrypt</td><td class="badge badge-green">Free</td></tr>
+    <tr><td>Domain</td><td>Freenom .tk / js.org subdomain / is-a.dev</td><td class="badge badge-green">Free</td></tr>
+    <tr><td>CDN / DDoS protection</td><td>Cloudflare free tier (optional)</td><td class="badge badge-green">Free</td></tr>
+  </table>
+
+  <div class="tip">Total cost: ₹0. Your site — with WhatsApp integration, site visit booking form, and full SEO setup — will be live in under 30 minutes.</div>
+
+  <hr class="divider" />
+
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="https://railway.app" target="_blank">railway.app</a> — Free Node.js hosting</li>
+    <li><a href="https://github.com" target="_blank">github.com</a> — Push your code</li>
+    <li><a href="https://www.freenom.com" target="_blank">freenom.com</a> — Free .tk / .ml domain</li>
+    <li><a href="https://github.com/js-org/js.org" target="_blank">js-org/js.org</a> — Free *.js.org subdomain</li>
+    <li><a href="https://github.com/is-a-dev/register" target="_blank">is-a-dev/register</a> — Free *.is-a.dev subdomain</li>
+    <li><a href="https://www.cloudflare.com" target="_blank">cloudflare.com</a> — Free DNS + CDN (optional)</li>
+  </ul>
+
+  <footer>Made with IBM Bob</footer>
+</div>
+</body>
+</html>

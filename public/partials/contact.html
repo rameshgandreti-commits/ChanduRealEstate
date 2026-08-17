@@ -1,0 +1,71 @@
+    <!-- CONTACT SECTION -->
+    <section id="section-contact" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p id="contact-subtitle" class="section-subtitle">Have questions? Our experts are here to help you guide your investment</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-cards">
+            <div class="c-card">
+              <div class="c-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="c-details">
+                <h3 id="contact-head-office">Head Office Address</h3>
+                <p id="contact-office-desc">Chandu Real Estate, Flat No: 104, Sai Towers, Dwaraka Nagar 3rd Lane, Visakhapatnam, Andhra Pradesh, India - 530016</p>
+              </div>
+            </div>
+
+            <div class="c-card">
+              <div class="c-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="c-details">
+                <h3 id="contact-phone">Phone</h3>
+                <p>+91 9886126344</p>
+                <p>+91 891 2456789 (Landline)</p>
+              </div>
+            </div>
+
+            <div class="c-card">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="c-details">
+                <h3 id="contact-email">Email</h3>
+                <p>info@chandurealestate.com</p>
+                <p>sales@chandurealestate.com</p>
+              </div>
+            </div>
+
+            <div class="c-card">
+              <div class="c-icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <div class="c-details">
+                <h3 id="contact-office-hours">Office Hours</h3>
+                <p id="contact-office-hours-desc">Monday - Sunday: 9:00 AM - 7:30 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Inquiry Form -->
+          <div class="contact-form-side shadow-card">
+            <h3 id="contact-send-query">Send an Email Inquiry</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting us! We will get back to you shortly.'); this.reset();">
+              <div class="form-group">
+                <label for="contact-name" id="lbl-contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="contact-input" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="contact-email-addr" id="lbl-contact-email">Your Email Address</label>
+                <input type="email" id="contact-email-addr" class="contact-input" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="contact-msg" id="lbl-contact-msg">Message / Query</label>
+                <textarea id="contact-msg" class="contact-textarea" rows="4" required placeholder="Tell us about your requirements..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="btn-send-contact">Submit Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>

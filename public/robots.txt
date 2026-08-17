@@ -1,0 +1,13 @@
+# robots.txt for www.chandurealestate.com
+# Allow all major search engines to crawl all pages
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://www.chandurealestate.com/sitemap.xml
+
+# Crawl-delay (optional, good practice)
+Crawl-delay: 5

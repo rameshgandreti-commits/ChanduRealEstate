@@ -1,0 +1,53 @@
+  <!-- Top Header / Bar -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-area" onclick="navigateTo('home')">
+        <div class="logo-icon">
+          <i class="fa-solid fa-house-chimney"></i>
+        </div>
+        <div class="logo-text">
+          <h1 id="site-title">Chandu Real Estate</h1>
+          <span id="site-subtitle">Your Trusted Partner</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu Bar -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#home"       id="nav-home"       class="nav-link active" onclick="navigateTo('home', event)">Home</a></li>
+          <li><a href="#about"      id="nav-about"      class="nav-link"        onclick="navigateTo('about', event)">About Us</a></li>
+          <li><a href="#projects"   id="nav-projects"   class="nav-link"        onclick="navigateTo('projects', event)">Our Projects</a></li>
+          <li><a href="#gallery"    id="nav-gallery"    class="nav-link"        onclick="navigateTo('gallery', event)">Gallery</a></li>
+          <li><a href="#site-visit" id="nav-site-visit" class="nav-link"        onclick="navigateTo('site-visit', event)">Site Visit</a></li>
+          <li><a href="#contact"    id="nav-contact"    class="nav-link"        onclick="navigateTo('contact', event)">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Menu Button -->
+      <div class="header-actions">
+        <div class="lang-selector">
+          <i class="fa-solid fa-globe lang-icon"></i>
+          <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="or">ଓଡ଼ିଆ (Oriya)</option>
+          </select>
+        </div>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fa-solid fa-bars" id="menu-btn-icon"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#home"       id="mob-nav-home"       class="mob-link active" onclick="navigateTo('home', event)">Home</a></li>
+      <li><a href="#about"      id="mob-nav-about"      class="mob-link"        onclick="navigateTo('about', event)">About Us</a></li>
+      <li><a href="#projects"   id="mob-nav-projects"   class="mob-link"        onclick="navigateTo('projects', event)">Our Projects</a></li>
+      <li><a href="#gallery"    id="mob-nav-gallery"    class="mob-link"        onclick="navigateTo('gallery', event)">Gallery</a></li>
+      <li><a href="#site-visit" id="mob-nav-site-visit" class="mob-link"        onclick="navigateTo('site-visit', event)">Site Visit</a></li>
+      <li><a href="#contact"    id="mob-nav-contact"    class="mob-link"        onclick="navigateTo('contact', event)">Contact</a></li>
+    </ul>
+  </div>

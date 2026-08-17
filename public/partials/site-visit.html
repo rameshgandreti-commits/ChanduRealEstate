@@ -1,0 +1,61 @@
+    <!-- SITE VISIT SECTION (Interactive Booking Form) -->
+    <section id="section-site-visit" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="site-visit-title" class="section-title">Schedule a Site Visit</h2>
+          <div class="title-underline"></div>
+          <p id="site-visit-subtitle" class="section-subtitle">Book a free pick-and-drop site visit guided by our real estate experts</p>
+        </div>
+
+        <div class="form-wrapper shadow-card">
+          <div class="form-banner">
+            <div class="form-banner-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <h3>Book Your Slot</h3>
+            <p>Our executive will arrange transport and personally show you around our ventures.</p>
+          </div>
+          <form id="site-visit-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name" id="lbl-first-name">First Name <span class="required">*</span></label>
+                <div class="input-icon-wrapper">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="first-name" name="firstName" required placeholder="Enter your first name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last-name" id="lbl-last-name">Last Name <span class="required">*</span></label>
+                <div class="input-icon-wrapper">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="last-name" name="lastName" required placeholder="Enter your last name">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile-number" id="lbl-mobile">Mobile Number <span class="required">*</span></label>
+              <div class="input-icon-wrapper">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="mobile-number" name="mobileNumber" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number">
+              </div>
+              <small class="form-help">Provide a valid 10-digit number for contact.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="visit-time" id="lbl-date-time">Preferred Date &amp; Time <span class="required">*</span></label>
+              <div class="input-icon-wrapper">
+                <i class="fa-solid fa-clock"></i>
+                <input type="datetime-local" id="visit-time" name="visitTime" required>
+              </div>
+            </div>
+
+            <div class="success-alert" id="form-success-alert">
+              <i class="fa-solid fa-circle-check"></i> <span id="success-msg">Redirecting to WhatsApp to complete your booking...</span>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-submit btn-block">
+              <i class="fa-brands fa-whatsapp"></i> <span id="btn-submit-text">Submit &amp; Contact via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
