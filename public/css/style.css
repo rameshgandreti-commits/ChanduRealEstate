@@ -245,7 +245,7 @@ body {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background-image: url('/logo/Hero.jpeg');
+  background-image: url('../logo/Hero.jpeg');
   background-size: cover;
   background-position: center top;
   height: 420px;
