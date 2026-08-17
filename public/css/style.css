@@ -121,6 +121,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  min-width: 0;
 }
 
 .logo-area {
@@ -128,6 +129,9 @@ body {
   align-items: center;
   gap: 12px;
   cursor: pointer;
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 
 .logo-image {
@@ -137,10 +141,18 @@ body {
   border-radius: 50%;
 }
 
+.logo-text {
+  min-width: 0;
+  overflow: hidden;
+}
+
 .logo-text h1 {
   font-size: 20px;
   font-weight: 700;
   color: var(--primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .logo-text span {
@@ -148,6 +160,9 @@ body {
   color: var(--text-muted);
   display: block;
   margin-top: -2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .desktop-nav ul {
@@ -175,6 +190,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-shrink: 0;
 }
 
 /* Language Selector styling */
@@ -556,6 +572,7 @@ body {
 .select-wrapper {
   position: relative;
   width: 250px;
+  max-width: 100%;
 }
 
 .custom-select {
@@ -624,7 +641,7 @@ body {
 }
 
 .project-info-side {
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1118,9 +1135,13 @@ body {
   .mobile-menu-btn {
     display: block;
   }
+  .hero-section {
+    height: auto;
+    padding: 40px 20px;
+  }
   .hero-section h1,
   .hero-section h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .hero-section p {
     font-size: 14px;
@@ -1131,12 +1152,39 @@ body {
     max-width: 280px;
     gap: 10px;
   }
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-tagline-title {
+    font-size: 20px;
+  }
+  .hero-tagline-sub {
+    font-size: 14px;
+  }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .features-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .dropdown-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .select-wrapper {
+    width: 100%;
+  }
+  .project-info-side {
+    padding: 20px;
+  }
+  .contact-form-side {
+    padding: 20px;
+  }
+  #site-visit-form {
+    padding: 20px;
   }
   .form-row {
     grid-template-columns: 1fr;
@@ -1151,10 +1199,38 @@ body {
     gap: 10px;
     text-align: center;
   }
+  .lang-selector select {
+    max-width: 90px;
+  }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+  .logo-image {
+    width: 44px;
+    height: 44px;
+  }
+  .logo-text h1 {
+    font-size: 16px;
+  }
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-number {
+    font-size: 18px;
+  }
+  .project-headline {
+    font-size: 20px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+  .features-section {
+    padding: 24px 16px;
   }
 }
