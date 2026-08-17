@@ -1,0 +1,300 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DNS Records — ChanduRealEstate.com → GitHub Pages</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 14px; line-height: 1.6; background: #ffffff; color: #1f2328; }
+  .page { max-width: 760px; margin: 0 auto; padding: 36px 24px 48px; }
+  h1 { font-size: 21px; font-weight: 700; color: #1f2328; margin-bottom: 4px; }
+  .subtitle { color: #57606a; font-size: 13px; margin-bottom: 30px; }
+  h2 { font-size: 15px; font-weight: 700; color: #1f2328; margin: 28px 0 10px; padding-left: 10px; border-left: 3px solid #3b82d4; }
+  h3 { font-size: 13.5px; font-weight: 600; color: #1f2328; margin: 16px 0 6px; }
+  p { margin-bottom: 10px; }
+  .table { width: 100%; border-collapse: collapse; margin: 10px 0 16px; font-size: 13px; }
+  .table th { background: #f7f8fa; text-align: left; padding: 9px 12px; border: 1px solid #e5e7eb; font-weight: 600; color: #57606a; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .table td { padding: 9px 12px; border: 1px solid #e5e7eb; vertical-align: middle; font-family: "Consolas", "Courier New", monospace; font-size: 12.5px; }
+  .table td.label { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 13px; }
+  .table tr:nth-child(even) td { background: #f9fafb; }
+  .highlight { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 12px 16px; margin: 14px 0; font-size: 13px; color: #92400e; }
+  .info { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 12px 16px; margin: 14px 0; font-size: 13px; color: #1e40af; }
+  .success { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 16px; margin: 14px 0; font-size: 13px; color: #15803d; }
+  code { background: #f0f0f5; border-radius: 4px; padding: 1px 6px; font-family: "Consolas", "Courier New", monospace; font-size: 12px; color: #7c5cd8; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+  .badge-a { background: #dbeafe; color: #1e40af; }
+  .badge-cname { background: #ede9fe; color: #6d28d9; }
+  .badge-txt { background: #dcfce7; color: #15803d; }
+  .badge-mx { background: #fff7ed; color: #c2410c; }
+  .section-box { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px 20px; margin-bottom: 20px; }
+  .step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+  .step-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: #3b82d4; color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step-body { flex: 1; font-size: 13px; }
+  .step-body strong { display: block; margin-bottom: 2px; }
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 24px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  .mini-card { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px 14px; }
+  .mini-card .label { font-size: 11px; color: #57606a; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 600; margin-bottom: 4px; }
+  .mini-card .value { font-family: "Consolas", "Courier New", monospace; font-size: 12.5px; color: #1f2328; word-break: break-all; }
+  footer { text-align: center; font-size: 11px; color: #57606a; padding: 24px 0 0; border-top: 1px solid #e5e7eb; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>DNS Records — ChanduRealEstate.com</h1>
+  <p class="subtitle">GitHub Pages custom domain setup · All records to add at your registrar</p>
+
+  
+  <h2>Quick Reference — All Records at a Glance</h2>
+  <div class="section-box">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Host / Name</th>
+          <th>Value / Points To</th>
+          <th>TTL</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-a">A</span></td>
+          <td>@</td>
+          <td>185.199.108.153</td>
+          <td class="label">3600</td>
+          <td class="label">Root domain → GitHub Pages</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">A</span></td>
+          <td>@</td>
+          <td>185.199.109.153</td>
+          <td class="label">3600</td>
+          <td class="label">Root domain → GitHub Pages</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">A</span></td>
+          <td>@</td>
+          <td>185.199.110.153</td>
+          <td class="label">3600</td>
+          <td class="label">Root domain → GitHub Pages</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">A</span></td>
+          <td>@</td>
+          <td>185.199.111.153</td>
+          <td class="label">3600</td>
+          <td class="label">Root domain → GitHub Pages</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-cname">CNAME</span></td>
+          <td>www</td>
+          <td>ramesh-somani.github.io</td>
+          <td class="label">3600</td>
+          <td class="label">www subdomain → GitHub Pages</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="info">
+      <strong>Note:</strong> GitHub Pages requires all four A records for redundancy and HTTPS enforcement. All four must be present — do not add just one.
+    </div>
+  </div>
+
+  
+  <h2>Optional — IPv6 (AAAA) Records</h2>
+  <div class="section-box">
+    <p style="font-size:13px;color:#57606a;margin-bottom:10px">Add these if your registrar supports AAAA records. Improves performance for IPv6 visitors.</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Host / Name</th>
+          <th>Value / Points To</th>
+          <th>TTL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-a">AAAA</span></td>
+          <td>@</td>
+          <td>2606:50c0:8000::153</td>
+          <td class="label">3600</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">AAAA</span></td>
+          <td>@</td>
+          <td>2606:50c0:8001::153</td>
+          <td class="label">3600</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">AAAA</span></td>
+          <td>@</td>
+          <td>2606:50c0:8002::153</td>
+          <td class="label">3600</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-a">AAAA</span></td>
+          <td>@</td>
+          <td>2606:50c0:8003::153</td>
+          <td class="label">3600</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr />
+
+  
+  <h2>GitHub Pages Repository Settings</h2>
+  <div class="section-box">
+    <p style="font-size:13px;margin-bottom:12px">After adding DNS records at your registrar, configure these settings in the GitHub repository:</p>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>Open repository Settings → Pages</strong>
+        Go to <code>github.com / &lt;your-username&gt; / &lt;repo&gt; / settings / pages</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>Source — set to GitHub Actions</strong>
+        The <code>pages.yml</code> workflow already handles deployment from the <code>public/</code> folder.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Custom domain — enter your domain</strong>
+        Type <code>www.ChanduRealEstate.com</code> and click Save. GitHub will verify DNS and issue a free TLS certificate.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <strong>Enforce HTTPS — enable the checkbox</strong>
+        Appears automatically once DNS verification passes (usually 5–30 minutes after DNS propagates).
+      </div>
+    </div>
+    <div class="info" style="margin-top:4px">
+      The <code>public/CNAME</code> file already contains <code>www.ChanduRealEstate.com</code>, so each deployment automatically keeps GitHub Pages configured correctly.
+    </div>
+  </div>
+
+  <hr />
+
+  
+  <h2>Google Search Console Verification (TXT Record)</h2>
+  <div class="section-box">
+    <p style="font-size:13px;margin-bottom:10px">Google Search Console requires a TXT record to verify domain ownership. Add it once you have the token from Google.</p>
+    <table class="table">
+      <thead>
+        <tr><th>Type</th><th>Host / Name</th><th>Value</th><th>TTL</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-txt">TXT</span></td>
+          <td>@</td>
+          <td style="color:#57606a;font-style:italic">google-site-verification=&lt;your-token-here&gt;</td>
+          <td class="label">3600</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:#57606a">Get the token from <code>search.google.com/search-console</code> → Add Property → DNS verification method.</p>
+  </div>
+
+  <hr />
+
+  
+  <h2>Where to Add Records — By Registrar</h2>
+  <div class="section-box">
+    <table class="table">
+      <thead>
+        <tr><th>Registrar</th><th>DNS Settings Path</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="label"><strong>GoDaddy</strong></td>
+          <td>My Products → DNS → Manage DNS</td>
+        </tr>
+        <tr>
+          <td class="label"><strong>Namecheap</strong></td>
+          <td>Domain List → Manage → Advanced DNS</td>
+        </tr>
+        <tr>
+          <td class="label"><strong>BigRock</strong></td>
+          <td>My Account → Manage Orders → DNS Management</td>
+        </tr>
+        <tr>
+          <td class="label"><strong>Google / Squarespace</strong></td>
+          <td>Domains → ChanduRealEstate.com → DNS</td>
+        </tr>
+        <tr>
+          <td class="label"><strong>Cloudflare (free proxy)</strong></td>
+          <td>DNS → Records → Add record. Set CNAME proxy to <em>DNS only</em> (grey cloud) for GitHub HTTPS to work.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr />
+
+  
+  <h2>Verify DNS Propagation</h2>
+  <div class="section-box">
+    <p style="font-size:13px;margin-bottom:12px">After saving records, use these tools to confirm propagation (takes 15 min – 48 hours):</p>
+    <div class="two-col">
+      <div class="mini-card">
+        <div class="label">Global checker</div>
+        <div class="value">whatsmydns.net</div>
+      </div>
+      <div class="mini-card">
+        <div class="label">DNS lookup</div>
+        <div class="value">dnschecker.org</div>
+      </div>
+      <div class="mini-card">
+        <div class="label">PowerShell (local)</div>
+        <div class="value">Resolve-DnsName www.ChanduRealEstate.com</div>
+      </div>
+      <div class="mini-card">
+        <div class="label">Expected CNAME answer</div>
+        <div class="value">ramesh-somani.github.io</div>
+      </div>
+    </div>
+    <div class="success">
+      <strong>All good when:</strong> A records resolve to all four <code>185.199.10x.153</code> IPs, the CNAME for <code>www</code> points to <code>*.github.io</code>, and <code>https://www.ChanduRealEstate.com</code> loads with a valid TLS certificate.
+    </div>
+  </div>
+
+  <hr />
+
+  
+  <h2>Domain Flow Summary</h2>
+  <div class="section-box">
+    <table class="table">
+      <thead>
+        <tr><th>URL Typed</th><th>Record Used</th><th>Resolves To</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>chandurealestate.com</td>
+          <td class="label"><span class="badge badge-a">A</span> @ → 185.199.10x.153</td>
+          <td class="label">GitHub Pages (redirected to www by CNAME file)</td>
+        </tr>
+        <tr>
+          <td>www.chandurealestate.com</td>
+          <td class="label"><span class="badge badge-cname">CNAME</span> www → ramesh-somani.github.io</td>
+          <td class="label">GitHub Pages → serves <code>public/</code> folder</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Made with IBM Bob  ·  Chandu Real Estate DNS Reference</p>
+  </footer>
+</div>
+</body>
+</html>

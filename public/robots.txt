@@ -1,4 +1,4 @@
-# robots.txt for www.chandurealestate.com
+# robots.txt for rameshgandreti-commits.github.io/ChanduRealEstate
 # Allow all major search engines to crawl all pages
 
 User-agent: *
@@ -7,7 +7,7 @@ Disallow: /api/
 Disallow: /node_modules/
 
 # Sitemaps
-Sitemap: https://www.chandurealestate.com/sitemap.xml
+Sitemap: https://rameshgandreti-commits.github.io/ChanduRealEstate/sitemap.xml
 
 # Crawl-delay (optional, good practice)
 Crawl-delay: 5
