@@ -130,16 +130,11 @@ body {
   cursor: pointer;
 }
 
-.logo-icon {
-  width: 44px;
-  height: 44px;
-  background-color: var(--primary);
-  color: white;
+.logo-image {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
 }
 
 .logo-text h1 {
@@ -371,6 +366,12 @@ body {
   width: 100%;
   height: 340px;
   border-radius: var(--radius-lg);
+}
+
+.home-logo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 /* Home Statistics */
@@ -1059,6 +1060,9 @@ body {
   .about-visual img {
     height: 300px;
   }
+  .home-logo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .project-details-card {
     grid-template-columns: 1fr;
   }
@@ -1119,6 +1123,9 @@ body {
 
 @media (max-width: 480px) {
   .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-logo-gallery {
     grid-template-columns: 1fr;
   }
 }
